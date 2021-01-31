@@ -1,0 +1,6 @@
+[submodule "plugin.video.videomediaset"]
+	path = plugin.video.videomediaset
+	url = https://github.com/typhoon51280/plugin.video.videomediaset
+[submodule "script.module.phate89"]
+	path = script.module.phate89
+	url = https://github.com/typhoon51280/script.module.phate89

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.videomediaset" name="Mediaset Play" provider-name="phate89, aracnoz" version="2.0.1~beta6">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.phate89" version="1.2.1~beta3"/>
+        <import addon="script.module.inputstreamhelper" version="0.0.1"/>
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" name="videomediaset.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <language>it</language>
+        <platform>all</platform>
+        <summary lang="it_IT">I programmi delle reti Mediaset</summary>
+        <description lang="it_IT">Tutti i tuoi programmi preferiti sono disponibili per te il giorno dopo la messa in onda Tv. Ieri sera ti sei perso la tua fiction preferita? Nessun problema finalmente puoi rivederla comodamente su KODI ogni volta che vuoi.</description>
+        <summary lang="en_GB">The broadcasts of Mediaset channels</summary>
+        <description lang="en_GB">All your favorite shows are available to you the day after the airing Tv. Last night you missed your favorite TV drama? No problem, you can finally see her comfortably on KODI whenever you want.</description>
+        <license>GPL-2.0-only</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=292876</forum>
+        <source>https://github.com/typhoon51280/plugin.video.videomediaset</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <news>2.0.1
+- added support for live restart (manually jump to start after you start play right now)
+- added brand title in episode and clip search to have better info
+- added details of live event in  live channels section
+- improved performance reusing python env
+- improved element sorting
+- added editions visualization for programs
+- fixed case of valid video without media info (no way to play it)
+- improved media type and info detection
+- fixed next page search
+        </news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.typhoon51280" name="Typhoon51280 Kodi Repository" version="1.0.0" provider-name="typhoon51280">
+    <extension point="xbmc.addon.repository" name="Typhoon51280 Kodi Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/typhoon51280/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/typhoon51280/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Typhoon51280 Kodi Repository</summary>
+        <description>This is the repository for typhoon51280 kodi addons under development</description>
+        <disclaimer>The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+        </disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.phate89" name="phate89 helper module" version="1.2.1~beta3" provider-name="phate89">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.1" />
+        <import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="script.module.html5lib" version="0.999.0"/>
+		<import addon="script.module.kodi-six" version="0.0.5"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module</summary>
+		<description lang="en">Helper module for addons</description>
+		<summary lang="it">Helper module</summary>
+		<description lang="it">Modulo di aiuto per gli addon</description>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<source>https://github.com/typhoon51280/script.module.phate89</source>
+	</extension>
+</addon>
+</addons>
