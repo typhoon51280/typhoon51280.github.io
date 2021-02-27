@@ -39,12 +39,17 @@
     </extension>
 </addon>
 
-<addon id="repository.typhoon51280" name="Typhoon51280 Kodi Repository" version="1.0.0" provider-name="typhoon51280">
+<addon id="repository.typhoon51280" name="Typhoon51280 Kodi Repository" version="2.0.0" provider-name="typhoon51280">
     <extension point="xbmc.addon.repository" name="Typhoon51280 Kodi Repository">
-        <dir>
+        <dir minversion="17.9.0">
             <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/main/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/main/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/main/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
