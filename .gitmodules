@@ -10,3 +10,7 @@
 	path = repository.typhoon51280
 	url = https://github.com/typhoon51280/repository.typhoon51280
 	branch = matrix
+[submodule "plugin.video.mediasetinfinity"]
+	path = plugin.video.mediasetinfinity
+	url = https://github.com/typhoon51280/plugin.video.mediasetinfinity.git
+	branch = matrix
