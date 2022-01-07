@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.mediasetinfinity" name="Mediaset Infinity" provider-name="typhoon51280" version="1.0.0">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0" /> <!-- Krypton 17.x -->
+        <import addon="script.module.inputstreamhelper" version="0.0.1"/>
+        <import addon="script.module.codequick" version="0.9.10"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <!-- <extension point="xbmc.service" name="videomediaset.service" library="service.py" /> -->
+    <extension point="xbmc.addon.metadata">
+        <language>it</language>
+        <platform>all</platform>
+        <summary lang="it_IT">I programmi piattaforma Mediaset Infinity</summary>
+        <description lang="it_IT"></description>
+        <disclaimer lang="it_IT"></disclaimer>
+        <summary lang="en_GB">The broadcasts of Mediaset Infinity platform</summary>
+        <description lang="en_GB"></description>
+        <disclaimer lang="en_GB"></disclaimer>
+        <license>MIT</license>
+        <forum></forum>
+        <website></website>
+        <source>https://github.com/typhoon51280/plugin.video.mediasetinfinity</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <news>v1.0.0 (??/??/2021)
+        - [new] initial release
+        </news>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.png</fanart>
+            <banner></banner>
+            <clearlogo></clearlogo> <!-- optional  -->
+            <screenshot></screenshot> <!-- optional, max 10  -->
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.videomediaset" name="Mediaset Play" provider-name="phate89, aracnoz" version="2.1.0~beta10">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
@@ -39,7 +76,7 @@
     </extension>
 </addon>
 
-<addon id="repository.typhoon51280" name="Typhoon51280 Kodi Repository" version="2.0.0" provider-name="typhoon51280">
+<addon id="repository.typhoon51280" name="Typhoon51280 Kodi Repository" version="3.0.0" provider-name="typhoon51280">
     <extension point="xbmc.addon.repository" name="Typhoon51280 Kodi Repository">
         <dir minversion="17.9.0">
             <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/main/zips/addons.xml</info>
@@ -50,6 +87,11 @@
             <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/</datadir>
+        </dir>
+        <dir minversion="19.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/nexus/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/nexus/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/nexus/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
