@@ -44,7 +44,7 @@ class Generator:
             zip = zipfile.ZipFile(final_zip, 'w', compression=zipfile.ZIP_DEFLATED )
             root_len = len(os.path.dirname(os.path.abspath(addon_id)))
             
-            ignore = ['.git', '.github', '.gitignore', '.DS_Store', 'thumbs.db', '.idea', 'venv']
+            ignore = ['.git', '.github', '.gitignore', '.gitattributes', '.gitmodules', '.DS_Store', 'thumbs.db', '.idea', '.vscode', 'venv', '__pycache__']
             
             for root, dirs, files in os.walk(addon_id):
                 # remove any unneeded git artifacts
@@ -79,7 +79,9 @@ class Generator:
 
 # Remove any instances of pyc or pyo files
     def _remove_binaries(self):
-        for parent, dirnames, filenames in os.walk('.'):
+        exclude = set(['__pycache__'])
+        for parent, dirnames, filenames in os.walk('.', topdown=True):
+            dirnames[:] = [d for d in dirnames if d not in exclude] 
             for fn in filenames:
                 if fn.lower().endswith('pyo') or fn.lower().endswith('pyc'):
                     compiled = os.path.join(parent, fn)
