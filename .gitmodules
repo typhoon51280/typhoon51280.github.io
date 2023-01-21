@@ -1,11 +1,11 @@
 [submodule "plugin.video.videomediaset"]
 	path = plugin.video.videomediaset
 	url = https://github.com/typhoon51280/plugin.video.videomediaset
-	branch = master
+	branch = main
 [submodule "script.module.phate89"]
 	path = script.module.phate89
 	url = https://github.com/typhoon51280/script.module.phate89
-	branch = master
+	branch = main
 [submodule "repository.typhoon51280"]
 	path = repository.typhoon51280
 	url = https://github.com/typhoon51280/repository.typhoon51280
