@@ -37,10 +37,10 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.videomediaset" name="Mediaset Play" provider-name="phate89, aracnoz" version="2.1.0~beta22+nexus">
+<addon id="plugin.video.videomediaset" name="Mediaset Play" provider-name="phate89, aracnoz" version="3.0.0~beta1+nexus">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.phate89" version="1.3.0~beta9+nexus"/>
+        <import addon="script.module.phate89" version="3.0.0~beta1+nexus"/>
         <import addon="script.module.inputstreamhelper" version="0.0.1"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
@@ -76,22 +76,22 @@
     </extension>
 </addon>
 
-<addon id="repository.typhoon51280" name="Typhoon51280 Kodi Repository" version="3.0.0" provider-name="typhoon51280">
+<addon id="repository.typhoon51280" name="Typhoon51280 Kodi Repository" version="4.0.0" provider-name="typhoon51280">
     <extension point="xbmc.addon.repository" name="Typhoon51280 Kodi Repository">
-        <dir minversion="17.9.0">
-            <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/main/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/main/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/main/zips/</datadir>
-        </dir>
-        <dir minversion="18.9.0">
+        <dir minversion="19.0.0" maxversion="19.9.0">
             <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/matrix/zips/</datadir>
         </dir>
-        <dir minversion="19.9.0">
+        <dir minversion="20.0.0" maxversion="20.9.0">
             <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/nexus/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/nexus/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/nexus/zips/</datadir>
+        </dir>
+        <dir minversion="21.0.0" maxversion="21.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/omega/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/omega/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/typhoon51280/typhoon51280.github.io/omega/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -132,7 +132,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.phate89" name="phate89 helper module" version="1.3.0~beta9+nexus" provider-name="phate89">
+<addon id="script.module.phate89" name="phate89 helper module" version="3.0.0~beta1+nexus" provider-name="phate89">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.9.1"/>
