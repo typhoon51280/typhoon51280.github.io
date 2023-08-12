@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.mediasetinfinity" name="Mediaset Infinity" provider-name="typhoon51280" version="1.0.0+nexus">
+<addon id="plugin.video.mediasetinfinity" name="Mediaset Infinity" provider-name="typhoon51280" version="1.0.0+omega">
     <requires>
-        <import addon="xbmc.python" version="2.25.0" /> <!-- Krypton 17.x -->
+        <import addon="xbmc.python" version="3.0.0" /> <!-- Krypton 17.x -->
         <import addon="script.module.inputstreamhelper" version="0.0.1"/>
         <import addon="script.module.codequick" version="0.9.10"/>
     </requires>
@@ -37,10 +37,10 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.videomediaset" name="Mediaset Play" provider-name="phate89, aracnoz" version="3.0.0~beta1+nexus">
+<addon id="plugin.video.videomediaset" name="Mediaset Play" provider-name="phate89, aracnoz" version="4.0.0~alpha1+omega">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.phate89" version="3.0.0~beta1+nexus"/>
+        <import addon="script.module.phate89" version="4.0.0~alpha1+omega"/>
         <import addon="script.module.inputstreamhelper" version="0.0.1"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
@@ -132,7 +132,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.phate89" name="phate89 helper module" version="3.0.0~beta1+nexus" provider-name="phate89">
+<addon id="script.module.phate89" name="phate89 helper module" version="4.0.0~alpha1+omega" provider-name="phate89">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.9.1"/>
