@@ -1,16 +1,16 @@
 [submodule "plugin.video.videomediaset"]
 	path = plugin.video.videomediaset
-	url = git@github.com:typhoon51280/plugin.video.videomediaset
-	branch = matrix
+	url = https://github.com/typhoon51280/plugin.video.videomediaset
+	branch = nexus
 [submodule "script.module.phate89"]
 	path = script.module.phate89
-	url = git@github.com:typhoon51280/script.module.phate89
-	branch = matrix
+	url = https://github.com/typhoon51280/script.module.phate89
+	branch = nexus
 [submodule "repository.typhoon51280"]
 	path = repository.typhoon51280
-	url = git@github.com:typhoon51280/repository.typhoon51280
-	branch = matrix
+	url = https://github.com/typhoon51280/repository.typhoon51280
+	branch = nexus
 [submodule "plugin.video.mediasetinfinity"]
 	path = plugin.video.mediasetinfinity
-	url = git@github.com:typhoon51280/plugin.video.mediasetinfinity.git
-	branch = matrix
+	url = https://github.com/typhoon51280/plugin.video.mediasetinfinity
+	branch = nexus
